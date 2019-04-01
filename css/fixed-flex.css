@@ -8,3 +8,13 @@
 .flex-container {
   display: flex;
 }
+
+.main {
+  width: 600px;
+  padding: 10px;
+}
+
+.aside {
+  width: 200px;
+  padding: 10px;
+}
