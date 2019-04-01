@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: white;
+  font-size: 1.6rem;
+  font-family: "Hiragino Kaku Gothic ProN", meiryo, sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* nav */
+
+.horizontal-list {
+  text-align: right;
+}
+
+.horizontal-list .horizontal-item {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.horizontal-list .horizontal-item + .horizontal-item {
+  border-left: 1px solid;
+}
+
+.horizontal-item.active {
+  font-weight: bold;
+}
+
+/* article */
+
+.article .desc .image {
+  float: left;
+}
+
+.article .image {
+  width: 120px;
+}
+
+/* aside */
+
+.aside .heading {
+  font-size: 1.4rem;
+}
+
+.aside .aside-list {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-size: 1.4rem;
+  list-style: none;
+}
+
+.aside .aside-list li {
+  padding-left: 15px;
+  background-image: url(../images/arrow.jpg);
+  background-size: 12px 12px;
+  background-position: left center;
+}
+
+.ad {
+  margin-top: 10px;
+}
+
+.ad .image {
+  width: 120px;
+  height: 120px;
+}
+
+/* footer */
+
+.footer .copyright {
+  text-align: center;
+}
